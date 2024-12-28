@@ -1,9 +1,9 @@
 {
-  "name": "template-nextjs-approuter",
+  "name": "twitter-clon.nextjs",
   "version": "0.1.0",
   "private": true,
   "author": "Kevin van der Schans Delgado",
-  "description": "Built with NextJS, ReactTS and TailwindCSS",
+  "description": "Built with NextJS, ReactTS and Supabase",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

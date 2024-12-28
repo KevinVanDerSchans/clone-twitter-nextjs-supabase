@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Project Title',
-  description: 'Built with NextJS, ReactTS and TailwindCSS',
+  title: 'Twitter Clon',
+  description: 'Built with NextJS, ReactTS and Supabase',
 }
 
 export default function RootLayout({

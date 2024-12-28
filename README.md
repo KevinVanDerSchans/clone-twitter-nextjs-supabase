@@ -1,3 +1,3 @@
-# Template with NextJS (App Router), ReactTS and TailwindCSS
+# Twitter Clon
 
-## NextJS, ReactTS
+## NextJS / ReactTS / Supabase
