@@ -8,7 +8,7 @@ export function AuthButton({ session }: { session: Session | null }) {
   const { handleSignIn, handleSignOut } = useAuthButtonClient()
 
   return (
-    <header>
+    <header className='my-6 text-center'>
       {session === null ? (
         <button
           onClick={handleSignIn}
