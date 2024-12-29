@@ -2,6 +2,7 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { Database } from '@sharedTypes/database'
+import { CreatePostForm } from '@tweets/components/CreatePostForm'
 import { PostList } from 'src/presentation/features/tweets/components/PostList'
 import { AuthButtonServer } from '@auth/components/AuthButtonServer'
 
@@ -16,7 +17,10 @@ export default async function Home() {
     redirect('/login')
   }
 
-  const { data: rawPosts, error: postsError } = await supabase.from('posts').select('*')
+  const { data: rawPosts, error: postsError } = await supabase
+    .from('posts')
+    .select('*')
+    .order('created_at', { ascending: false })
   const { data: rawUsers, error: usersError } = await supabase.from('users').select('id, user_name, name, avatar_url')
 
   if (postsError || usersError || !rawPosts || !rawUsers) {
@@ -34,6 +38,7 @@ export default async function Home() {
   return (
     <main className='flex min-h-screen bg-black flex-col items-center justify-between'>
       <section className='max-w-[600px] w-full mx-auto border-l border-r border-white/20 min-h-screen'>
+        <CreatePostForm userAvatarUrl={session.user?.user_metadata?.avatar_url} />
         <PostList
           posts={posts}
           users={rawUsers}
