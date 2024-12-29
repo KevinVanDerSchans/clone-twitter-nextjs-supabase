@@ -8,6 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "gen:types": "npx supabase gen types typescript --project-id zsowtayxbbcmfxfdsiyr > ./src/shared/types/database.ts",
     "tailwind:build": "tailwindcss -i src/styles/globals.css -o src/styles/styles.css",
     "lint": "next lint",
     "prepare": "husky install"

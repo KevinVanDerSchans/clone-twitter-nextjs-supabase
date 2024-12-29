@@ -18,6 +18,9 @@
 /out/
 .swc/
 
+# supabase
+src/shared/types/database.ts
+
 # production
 /build
 generateProjectStructure.js
