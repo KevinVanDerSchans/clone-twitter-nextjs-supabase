@@ -34,7 +34,8 @@
       "@svgs/*": ["public/svgs/*"],
       "@styles/*": ["src/styles/*"],
 
-      "@auth/*": ["src/presentation/features/auth/*"]
+      "@auth/*": ["src/presentation/features/auth/*"],
+      "@tweets/*": ["src/presentation/features/tweets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
