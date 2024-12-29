@@ -2,6 +2,7 @@
 import { type Session } from '@supabase/auth-helpers-nextjs'
 import { GitHubIcon } from '@constants/Icons'
 import { useAuthButtonClient } from '@auth/hooks/useAuthButtonClient'
+import { Button } from '@nextui-org/react'
 
 export function AuthButton({ session }: { session: Session | null }) {
   const { handleSignIn, handleSignOut } = useAuthButtonClient()
@@ -18,7 +19,7 @@ export function AuthButton({ session }: { session: Session | null }) {
           Sign in with Github
         </button>
       ) : (
-        <button onClick={handleSignOut}>Sign out</button>
+        <Button onClick={handleSignOut}>Sign out</Button>
       )}
     </header>
   )
