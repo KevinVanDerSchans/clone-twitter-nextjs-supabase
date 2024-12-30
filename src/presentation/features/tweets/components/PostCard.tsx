@@ -32,18 +32,29 @@ export default function PostCard({
           </div>
         </div>
       </CardHeader>
+
       <CardBody className='px-3 py-0 text-xs text-white bg-transparent'>
         <p>{content}</p>
       </CardBody>
+
       <CardFooter className='gap-3'>
         <button>
-          <IconMessageCircle className='w-4 h-4 text-white' />
+          <IconMessageCircle
+            className='w-4 h-4 text-white'
+            aria-label='Messages'
+          />
         </button>
         <button>
-          <IconHeart className='w-4 h-4 text-white' />
+          <IconHeart
+            className='w-4 h-4 text-white'
+            aria-label='Favorites'
+          />
         </button>
         <button>
-          <IconRepeat className='w-4 h-4 text-white' />
+          <IconRepeat
+            className='w-4 h-4 text-white'
+            aria-label='Repeat'
+          />
         </button>
       </CardFooter>
     </Card>

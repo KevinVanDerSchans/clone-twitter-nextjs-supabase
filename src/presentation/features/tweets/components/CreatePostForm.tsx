@@ -22,7 +22,6 @@ export function CreatePostForm({ userAvatarUrl }: { userAvatarUrl: string }) {
           <Avatar
             radius='full'
             size='md'
-            className=''
             src={userAvatarUrl}
           />
         </div>
@@ -31,8 +30,8 @@ export function CreatePostForm({ userAvatarUrl }: { userAvatarUrl: string }) {
           <textarea
             name='content'
             rows={4}
-            className='w-full text-lg text-white placeholder-gray-500 p-3'
             placeholder='What is going on?'
+            className='w-full text-lg text-white placeholder-gray-500 p-3'
           ></textarea>
           <ComposePostButton />
         </div>
