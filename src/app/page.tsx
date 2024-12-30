@@ -36,8 +36,8 @@ export default async function Home() {
   }))
 
   return (
-    <main className='flex min-h-screen bg-black flex-col items-center justify-between'>
-      <section className='max-w-[600px] w-full mx-auto border-l border-r border-white/20 min-h-screen'>
+    <main className='flex min-h-screen bg-black flex-col items-center justify-between my-1'>
+      <section className='max-w-[600px] w-full mx-auto border-l border-r border-white/20'>
         <CreatePostForm userAvatarUrl={session.user?.user_metadata?.avatar_url} />
 
         <PostList

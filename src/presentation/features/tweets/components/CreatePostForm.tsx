@@ -31,7 +31,7 @@ export function CreatePostForm({ userAvatarUrl }: { userAvatarUrl: string }) {
             name='content'
             rows={4}
             placeholder='What is going on?'
-            className='w-full text-lg text-white placeholder-gray-500 p-3'
+            className='w-full text-sm text-white placeholder-gray-500 p-3'
           ></textarea>
           <ComposePostButton />
         </div>

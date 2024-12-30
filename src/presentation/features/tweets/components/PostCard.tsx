@@ -33,7 +33,7 @@ export default function PostCard({
         </div>
       </CardHeader>
 
-      <CardBody className='px-3 py-0 text-xs text-white bg-transparent'>
+      <CardBody className='px-3 py-0 text-sm text-white bg-transparent'>
         <p>{content}</p>
       </CardBody>
 
