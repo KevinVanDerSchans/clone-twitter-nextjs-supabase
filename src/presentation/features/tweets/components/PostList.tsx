@@ -1,14 +1,10 @@
 import { Database } from '@sharedTypes/database'
 import { type Post } from '@tweets/types/Post'
+import { usePostList } from '@tweets/hooks/usePostList'
 import PostCard from '@tweets/components/PostCard'
 
 export function PostList({ posts, users }: { posts: Post[]; users: Database['public']['Views']['users']['Row'][] }) {
-  const usersMap = new Map(users?.map(user => [user.id, user]))
-
-  const enrichedPosts: Post[] = posts?.map(post => ({
-    ...post,
-    user: usersMap.get(post.user_id) || null,
-  }))
+  const { enrichedPosts } = usePostList({ posts, users })
 
   return (
     <>
