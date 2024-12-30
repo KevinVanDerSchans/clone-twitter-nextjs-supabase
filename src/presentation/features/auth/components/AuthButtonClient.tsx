@@ -21,7 +21,7 @@ export function AuthButton({ session }: { session: Session | null }) {
         </button>
       ) : (
         <Button
-          onClick={handleSignOut}
+          onPress={handleSignOut}
           aria-label='Log out'
           type='button'
         >
