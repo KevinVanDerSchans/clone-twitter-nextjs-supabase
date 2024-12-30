@@ -4,7 +4,11 @@ import '@styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Twitter Clone',
-  description: 'Built with NextJS, ReactTS and Supabase',
+  description: 'Login with GitHub and create your own Tweets',
+  authors: [{ name: 'Kevin van der Schans Delgado' }],
+  keywords:
+    'Twitter Clone, Social Media, Create Tweets, GitHub Login, Supabase, Authentication, Next.js, React, TailwindCSS',
+  applicationName: 'Twitter Clone',
 }
 
 export default function RootLayout({
