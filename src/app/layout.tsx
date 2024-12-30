@@ -3,7 +3,7 @@ import { Providers } from '@app/providers'
 import '@styles/globals.css'
 
 export const metadata: Metadata = {
-  title: 'Twitter Clon',
+  title: 'Twitter Clone',
   description: 'Built with NextJS, ReactTS and Supabase',
 }
 

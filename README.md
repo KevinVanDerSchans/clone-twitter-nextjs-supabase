@@ -1,3 +1,3 @@
-# Twitter Clon
+# Twitter Clone
 
 ## NextJS / ReactTS / Supabase
